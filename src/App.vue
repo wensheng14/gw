@@ -6,6 +6,18 @@
       <carousel></carousel>
       <fast></fast>
     </div>
+    <picmenu></picmenu>
+    <div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
   </div>
 </template>
 
@@ -14,6 +26,7 @@ import logo from './components/logo.vue'
 import Nav from './components/Nav.vue'
 import carousel from './components/carousel.vue'
 import fast from './components/fast.vue'
+import picmenu from './components/picmenu.vue'
 
 export default {
   name: 'App',
@@ -22,6 +35,7 @@ export default {
     Nav,
     carousel,
     fast,
+    picmenu,
   }
 }
 </script>
