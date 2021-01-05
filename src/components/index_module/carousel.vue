@@ -13,8 +13,8 @@ export default {
   data() {
     return {
       carUrl: [
-        { imgUrl: require("../assets/images/1.jpg") },
-        { imgUrl: require("../assets/images/4.jpg") },
+        { imgUrl: require("../../assets/images/1.jpg") },
+        { imgUrl: require("../../assets/images/4.jpg") },
       ],
     };
   },
@@ -22,8 +22,6 @@ export default {
 </script>
 
 <style>
-/* 引入初始化文件 */
-@import url("../assets/CSS/init.css");
 .car {
   width: 927px;
   height: 385px;

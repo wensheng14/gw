@@ -17,32 +17,32 @@ export default {
         {
           id: 1,
           path: '',
-          url: require('../assets/images/kslj01.jpg'),
+          url: require('../../assets/images/kslj01.jpg'),
         },
         {
           id: 2,
           path: '',
-          url: require('../assets/images/kslj03.jpg'),
+          url: require('../../assets/images/kslj03.jpg'),
         },
         {
           id: 3,
           path: '',
-          url: require('../assets/images/kslj01.jpg'),
+          url: require('../../assets/images/kslj01.jpg'),
         },
         {
           id: 4,
           path: '',
-          url: require('../assets/images/kslj01.jpg'),
+          url: require('../../assets/images/kslj01.jpg'),
         },
         {
           id: 5,
           path: '',
-          url: require('../assets/images/kslj01.jpg'),
+          url: require('../../assets/images/kslj01.jpg'),
         },
         {
           id: 6,
           path: '',
-          url: require('../assets/images/kslj01.jpg'),
+          url: require('../../assets/images/kslj01.jpg'),
         },
       ]
     }
@@ -51,8 +51,6 @@ export default {
 </script>
 
 <style>
-/* 引入初始化文件 */
-@import url("../assets/CSS/init.css");
 
 /* 整个盒子的样式 */
 .fast{

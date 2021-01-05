@@ -142,7 +142,7 @@ export default {
 
 <style>
 /* 引入初始化 */
-@import url("../assets/CSS/init.css");
+@import url("../../assets/CSS/init.css");
 /* nav 背景 */
 nav {
   background-color: #eee;
@@ -162,6 +162,7 @@ nav a,
   width: 132px;
   color: #333;
   text-align: center;
+  line-height: 42px;
 }
 /* 鼠标移入的效果 */
 nav a:hover,

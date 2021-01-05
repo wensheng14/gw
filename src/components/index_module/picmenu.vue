@@ -18,25 +18,25 @@ export default {
           id: 1,
           path: '',
           name: '招生咨询',
-          url: require('../assets/images/pic01.jpg'),
+          url: require('../../assets/images/pic01.jpg'),
         },
         {
           id: 2,
           path: '',
           name: '招生咨询',
-          url: require('../assets/images/pic01.jpg'),
+          url: require('../../assets/images/pic01.jpg'),
         },
         {
           id: 3,
           path: '',
           name: '招生咨询',
-          url: require('../assets/images/pic01.jpg'),
+          url: require('../../assets/images/pic01.jpg'),
         },
         {
           id: 4,
           path: '',
           name: '招生咨询',
-          url: require('../assets/images/pic01.jpg'),
+          url: require('../../assets/images/pic01.jpg'),
         },
       ]
     }
@@ -45,14 +45,12 @@ export default {
 </script>
 
 <style>
-/* 引入初始化样式文件 */
-@import url("../assets/CSS/init.css");
 
 /* 给包裹住pic的盒子变成弹性布局 */
 .picmenu {
   display: flex;
   justify-content: space-around;
-  padding-top: 30px;
+  padding: 30px 0 30px 0;
 }
 .picmenu .name {
   display: block;
@@ -60,6 +58,7 @@ export default {
   text-align: center;
   height: 30px;
   line-height: 30px;
+  border-bottom: 2px solid transparent;
 }
 .picmenu .name:hover {
   border-bottom: 2px solid #be2634;
