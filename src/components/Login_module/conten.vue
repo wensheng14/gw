@@ -65,6 +65,8 @@
                 id=""
                 autocomplete="off"
                 placeholder="请输入验证码"
+                v-model="capt"
+                @keyup="cap()"
               />
               <img src="../../assets/images/captcha.jpg" alt="" />
             </div>
@@ -81,7 +83,37 @@
 </template>
 
 <script>
-export default {};
+import $ from 'jquery'
+export default {
+  data() {
+    return {
+      capt: '',
+    }
+  },
+  methods: {
+    cap() {
+      $.ajax({
+        type: "GET",  //默认get
+        url: "http://localhost",  //默认当前页
+        data: this.capt,  //格式{key:value}
+        dataType: "json",
+        beforeSend: function () {
+          console.log('发送成功')
+        }, //请求发送前回调,常用验证
+        success: function (response) {  //请求成功回调
+          console.log(response)
+          console.log('请求回来了')
+        },
+        error: function (e) {  //请求超时回调
+          if(e.statusText == "timeout"){
+            alert("请求超时")
+          }
+        },
+        complete: function () {}, //无论请求是成功还是失败都会执行的回调，常用全局成员的释放，或者页面状态的重置
+      })
+    }
+  },
+};
 </script>
 
 <style>
