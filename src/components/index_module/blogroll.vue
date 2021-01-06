@@ -39,7 +39,7 @@ export default {
   justify-content: space-around;
   font-size: 12px;
 }
-ul span:first-child {
+#roll ul span:first-child {
   font-weight: 600;
 }
 #roll li a {
